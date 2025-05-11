@@ -17,9 +17,14 @@ data = {
         'Buena calidad, satisfecho con la compra',
         'Pésimo servicio, llegó tarde y mal',
         'La atención al cliente fue excelente',
-        'Horrible, se descompuso en un día'
+        'Horrible, se descompuso en un día',
+        # Nuevos comentarios positivos
+        'Excelente atencion y entrega muy rapida',
+        'Todo funciono a la perfeccion, lo recomiendo',
+        'Muy buena experiencia de compra, repetire sin duda'
     ],
-    'sentimiento': [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]  # 1 = positivo, 0 = negativo
+    'sentimiento': [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1]  # 1 = positivo, 0 = negativo
+
 }
 
 # Crear DataFrame
