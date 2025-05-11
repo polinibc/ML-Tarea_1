@@ -51,7 +51,7 @@ plt.title("Matriz de Confusión")
 plt.show()
 
 # Probar con un nuevo comentario
-nuevo_comentario = ["El producto es una muy bueno"]
+nuevo_comentario = ["El producto es una muy bueno, me encanta"]
 nuevo_vector = vectorizer.transform(nuevo_comentario)
 prediccion = modelo.predict(nuevo_vector)
 print("\nComentario:", nuevo_comentario[0])
