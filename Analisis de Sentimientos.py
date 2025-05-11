@@ -1,4 +1,3 @@
-
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer
@@ -50,8 +49,24 @@ disp = ConfusionMatrixDisplay.from_predictions(y_test, y_pred, display_labels=["
 plt.title("Matriz de Confusión")
 plt.show()
 
+# 🎯 Agregar gráfico de barras con los resultados
+# Contar predicciones positivas y negativas
+resultado_series = pd.Series(y_pred)
+conteo = resultado_series.value_counts().sort_index()  # 0 = negativo, 1 = positivo
+
+# Dibujar gráfico de barras
+etiquetas = ['Negativo', 'Positivo']
+valores = [conteo.get(0, 0), conteo.get(1, 0)]
+
+plt.bar(etiquetas, valores)
+plt.title("Resultados de Predicción")
+plt.xlabel("Sentimiento")
+plt.ylabel("Cantidad de predicciones")
+plt.grid(axis='y')
+plt.show()
+
 # Probar con un nuevo comentario
-nuevo_comentario = ["El producto es una muy bueno, me encanta"]
+nuevo_comentario = ["El producto es muy bueno, me encanta"]
 nuevo_vector = vectorizer.transform(nuevo_comentario)
 prediccion = modelo.predict(nuevo_vector)
 print("\nComentario:", nuevo_comentario[0])
