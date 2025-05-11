@@ -1,17 +1,23 @@
-# Sentiment Analysis
+# Análisis de Sentimientos con Python 
 
-Este proyecto entrena un modelo de aprendizaje automático para clasificar reseñas de clientes como positivas o negativas.
+Este proyecto es una demostración simple de un modelo de análisis de sentimientos en Python. Clasifica reseñas de texto como positivas o negativas utilizando `scikit-learn`.
 
-## Cómo ejecutar
+##  Objetivo
 
-1. Instala las dependencias:
+El objetivo es entrenar un modelo que pueda identificar si una reseña escrita por un usuario expresa una opinión positiva (1) o negativa (0).
 
-```
-pip install -r requirements.txt
-```
 
-2. Ejecuta el modelo:
+## Tecnologías usadas
 
-```
-python sentiment_model.py
-```
+- Python 3.10+
+- scikit-learn
+- pandas
+- matplotlib (opcional para gráficos)
+
+##  Cómo ejecutar el código
+
+1. Clona o descarga este repositorio
+2. Asegúrate de tener Python instalado
+3. Instala las dependencias:
+
+pip install pandas scikit-learn matplotlib
